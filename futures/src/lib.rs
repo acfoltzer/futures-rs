@@ -478,7 +478,7 @@ pub mod stream {
     };
 
     #[cfg(feature = "std")]
-    pub use futures_util::try_stream::IntoAsyncRead;
+    pub use futures_util::try_stream::{IntoAsyncRead, IntoAsyncReadParts};
 }
 
 pub mod task {

@@ -80,7 +80,7 @@ cfg_target_has_atomic! {
 mod into_async_read;
 #[cfg(feature = "io")]
 #[cfg(feature = "std")]
-pub use self::into_async_read::IntoAsyncRead;
+pub use self::into_async_read::{IntoAsyncRead, IntoAsyncReadParts};
 
 impl<S: ?Sized + TryStream> TryStreamExt for S {}
 
